@@ -1,0 +1,8 @@
+# dockerfile ingenuo (sem otimizacao) - usado so para comparacao de tamanho
+# carrega compilador Go codigo-fonte e SO inteiro para producao (~850 MB)
+FROM golang:1.23
+WORKDIR /app
+COPY . .
+RUN go build -o calculadora .
+EXPOSE 8080
+CMD ["./calculadora"]

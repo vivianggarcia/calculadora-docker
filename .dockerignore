@@ -1,0 +1,6 @@
+# envia ao Docker apenas o necessario para o build (contexto menor e mais rapido)
+.git
+*.md
+Dockerfile
+.dockerignore
+Dockerfile.ingenuo
